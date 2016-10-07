@@ -1,0 +1,40 @@
+@media (max-width: 1024px) {}
+
+@media (max-width: 991px) {
+	.table-row {
+	/*display: table-row;*/
+	/*height: 100%;*/
+	}
+	.row-padding {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	.container-fluid {
+		display: block;
+		/*width: 100%;
+		height: 100%;*/
+		box-sizing: none;
+	}
+	/* Sidebar navigation*/
+	.sidebar {
+		padding-left: 0;
+		padding-right: 0;
+		height: 100%;
+		display: block;
+	} 
+	.covermenu {
+		height: auto;
+	}
+	/*main content*/
+	.maincontent {
+		display: block;
+	}
+	.table-row {
+		display: block; 
+		/*height: 100%;*/
+	}
+}
+
+@media (max-width: 425px) {}
+
+@media (max-width: 375px) {}

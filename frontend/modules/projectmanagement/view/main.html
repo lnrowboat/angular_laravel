@@ -1,0 +1,31 @@
+<div class="module-projectmanagement">
+	<h1 class="text-left">Project Management</h1>
+	<button class="btn btn-success" ui-sref="app.projectmanagement.level">
+		<span class="glyphicon glyphicon-plus"></span> Add Level
+	</button>
+	<button class="btn btn-success" ui-sref="app.projectmanagement.task">
+		<span class="glyphicon glyphicon-plus"></span> Add Task
+	</button>
+	<button class="btn btn-success" ng-click="showModal('.modal-add-user')">
+		<span class="glyphicon glyphicon-plus"></span> 
+		Add User
+	</button>
+	<button class="btn btn-success" ng-click="listLevel()">List levels</button>
+	<div class="list-level">
+		
+	</div>
+</div>
+<div class="modal fade modal-add-user" role="dialog">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <button type="button" class="close" data-dismiss="modal">&times;</button>
+		  <h4 class="modal-title text-center">Add/Remove User</h4>
+		</div>
+		<div class="modal-body text-center">			
+			User form content
+		</div>
+		<div class="modal-footer"></div>
+	  </div>
+	</div>
+</div>

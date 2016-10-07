@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Paging-Table</title>
+	<script type="text/javascript" src="library/jquery203_min.js"></script>
+	<script type="text/javascript" src="library/jquery-ui-1.11.1.js"></script>
+	<script type="text/javascript" src="library/jquery-ui.multidatespicker.js"></script>
+	<script type="text/javascript" src="library/angular.min.js"></script>
+	<script type="text/javascript" src="config.js"></script>
+	<script type="text/javascript" src="library/ocLazyLoad.min.js"></script>
+	<script type="text/javascript" src="library/angular-route.min.js"></script>
+	<script type="text/javascript" src="library/angular-ui-router.js"></script>
+	<script type="text/javascript" src="library/angular-aria.js"></script>
+	<script type="text/javascript" src="library/angular-mocks.js"></script>
+	<script type="text/javascript" src="library/angular-animate.min.js"></script>
+	<script type="text/javascript" src="library/angular-touch.min.js"></script>
+	<script type="text/javascript" src="library/paging.js"></script>
+	<script type="text/javascript" src="library/bootstrap335/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="library/underscore.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script data-main="main" src="library/require.js"></script>
+	
+	<link href="library/bootstrap335/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="library/bootstrap335/css/bootstrap-theme.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/datepicker.css" />
+	<link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+<div ng-controller="HomeController" class="container-fluid">
+	<div class="row table-row">
+		<div class="sidebar col-md-3 col-sm-12 col-xs-12">
+			<div class="covermenu">
+			<ul class="mainnav">
+				<li class="haschild">
+					<a class="previcon icon-menu-gear">Project management<span class="icon glyphicon glyphicon-triangle-right"></span></a>
+					<ul>
+						<li ui-sref-active="active" ui-sref="app.projectmanagement.main">Dashboard</li>
+						<li ui-sref-active="active" ui-sref="app.projectmanagement.level">Level</li>
+						<li ui-sref-active="active" ui-sref="app.projectmanagement.task">Task</li>
+					</ul>
+					<div class="itemeffect"></div>
+				</li>
+			</ul>
+			</div>
+		</div>
+		<div class="col-md-9 col-sm-12 col-xs-12 maincontent" ui-view="content"></div>
+	</div>
+</div>
+</body>
+</html>
