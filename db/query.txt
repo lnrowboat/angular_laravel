@@ -1,0 +1,3 @@
+select level.id, level.title, task.title as tasktitle from level 
+left join level_task on level.id = level_task.level_id 
+left join task on task.id = level_task.task_id
